@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 93vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.9)), url(main-image.png);
+    background-size: 125%;
+    background-position: 50% 75%;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+nav button svg{
+    margin-right: 8px;
+}
+#language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+    margin-right: 10px;
+}
+#language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+#signin-btn{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 8px 16px;
+}
+.content{
+    height: 68vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.content h1{
+    font-family: 'Segoe UI';
+    font-size: 50px;
+    line-height: 90px;
+    font-weight: bold;
+}
+.content h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.form-field h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.form-field{
+    text-align: center;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.form-space{
+    width: 41%;
+    height: 60px;
+    position: relative;  
+}
+.form-space input{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+.get-btn{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 25px;
+    background-color: #e50914;
+    border-radius: 3px;
+    color: white;
+    border: 0;
+}
+
+.container{
+    padding: 0px 12%;
+    font-size: 33px;
+}
+section{
+    padding: 80px 0px;
+    border-top: 8px solid #222;
+}
+section:nth-child(5){
+    border-bottom: 8px solid #222;
+}
+.section-wrap{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.text-col{
+    flex-basis: 50%;
+}
+.text-col h1{
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    margin-bottom: 12px;
+}
+.text-col p{
+    font-size: 24px;
+}
+.media-col{
+    flex-basis: 50%;
+    position: relative;
+}
+.media-col img{
+    width: 100%;
+}
+.video-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
+}
+.video1{
+    max-width: 73%;
+    max-height: 54%;
+    top: 48%;
+    left: 50%;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.video2{
+    max-width: 63%;
+    max-height: 47%;
+    top: 34%;
+    left: 50%;
+}
+.overlayer{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    width: 55%;
+    min-width: 240px;
+    margin: 0 auto;
+    padding: 8px 12px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 32px 0 rgb(0,0,0);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+}
+.overlayer-img{
+    margin: 0 16px 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.overlayer-img img{
+    height: 80px;
+}
+.overlayer-text h4{
+    font-size: 16px;
+}
+.overlayer-text p{
+    font-size: 14px;
+    color: #0071eb;
+}
+.overlayer-animation{
+    width: 48px;
+    height: 48px;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    display: block;
+    content: "";
+    background: url(download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.overlayer-text{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px 0;
+}
+
+.section-faq{
+    text-align: center;
+}
+.section-faq h1{
+    font-weight: bold;
+}
+.accordion{
+    width: 100%;
+    font-size: 24px;
+    margin: 40px 0;
+    text-align: left;
+}
+.question{
+    position: relative;
+    background-color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.question label:hover{
+    background-color: #444;
+}
+.question svg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+.question .title{
+    display: block;
+    padding: 24px 30px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.question .answer{
+    padding: 0px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.question .answer p{
+    margin-bottom: 20px;
+}
+.question input[type="checkbox"] {
+    display: none;
+}
+.question input[type="checkbox"]:checked ~ .answer {
+    max-height: 600px;
+    padding: 24px 30px;
+
+}
+.question input[type="checkbox"]:checked ~ .title svg{
+    transform: rotate(90deg);
+}
+.form-space1{
+    width: 32%;
+    height: 60px;
+    position: relative;  
+}
+.form-space1 input{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+.links{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+li{
+    list-style: none;
+}
+.select-box {
+    position: relative;
+}
+.select-box svg {
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+select {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 6px 0px 6px 20px;
+    border-radius: 3px;
+}
+select option {
+    color: #000;
+}
+.footer{
+    padding: 80px 0px;
+}
+.contact{
+    margin-bottom: 40px;
+}
+.footer a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0px;
+}
+.footer .grid-container li a{
+    display: block;
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
